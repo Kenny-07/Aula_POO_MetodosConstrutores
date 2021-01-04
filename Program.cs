@@ -1,4 +1,5 @@
 ﻿using System;
+using Aula_POO_MetodosConstrutores.Classes;
 
 namespace Aula_POO_MetodosConstrutores
 {
@@ -6,7 +7,13 @@ namespace Aula_POO_MetodosConstrutores
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Digite seu nome");
+            string nome = Console.ReadLine();
+
+            Console.WriteLine("Digite seu sobrenome");
+            string sobreNome = Console.ReadLine();
+
+            Pessoa pessoa = new Pessoa(nome, sobreNome);
         }
     }
 }
